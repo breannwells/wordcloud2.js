@@ -417,7 +417,9 @@ if (!window.clearImmediate) {
         clientX = evt.clientX
         clientY = evt.clientY
       }
-      var eventX = clientX - rect.left
+
+      var eventXvalue = clientX - rect.left
+      var eventX = eventXvalue < 0 ? 0 : eventXvalue
       var eventY = clientY - rect.top
 
       var x = Math.floor(eventX * ((canvas.width / rect.width) || 1) / g)
