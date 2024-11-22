@@ -1,0 +1,8 @@
+Library(worldcloud2)
+wordcloud2(data = demoFreq)\
+head(demFreq)
+wordcluds(demFreq, color = "random-light", backgrundColor = "grey")
+wordcloud2(demFreq, minRotation = pi/6, maxRotation = -pi/6, minSize = 10,rotatio = 1)
+figpath = system.file("examples/t.png" ,package = "wprdcloud2")
+letterCloud(demFreq, word = "R", size = 2)
+letterCloud(demFreq, word = "WORDCLOUD2",wordSize = 1)
